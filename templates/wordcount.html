@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<form>
+<input type="text" id="input" name="text" onchange="" min=1>
+<input type="submit">
+</form>
+{% for x in factors %}
+   <li> {{ x }} </li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+</form>
+
+<tab>
+
+
+
+
+
+</tab>
+</body>
+</html>

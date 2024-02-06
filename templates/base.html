@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}{% endblock %}</title>
+
+</head>
+<body>
+    <style>
+    body {
+    background-color: pearl;
+    color: blue;
+    }
+    nav ul {
+    lsit-style-type: none ;
+    }
+    nav ul li {
+    display: inline;
+    paddig: 20px;
+    }
+</style>
+<nav>
+        <ul>
+            <li><a href="/">Home</a> </li>
+            <li><a href="/factor">Factors</a> </li>
+            <li><a href="/wordcount">Word Count</a> </li>
+
+        </ul>
+
+</nav>
+{% block content %}
+{% endblock %}
+</body>
+</html>

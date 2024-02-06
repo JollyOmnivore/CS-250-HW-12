@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<form action="/factor" method="POST">
+<input type="number" id="input" name="number" value="{{N}}" onchange="" min=1>
+<input type="submit">
+</form>
+<ul>
+{% for x in factors %}
+   <li> {{ x }} </li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
+</body>
+</html>
